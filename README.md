@@ -17,3 +17,6 @@ Qualsiasi cosa tu voglia creare, puoi usare questo template!
 Il tutorial che abbiamo usato anche in classe lo trovate [qui](https://wbigger.github.io/book-cs-3y/).
 
 Buon divertimento :)
+
+ #### Brief
+Una pagina che mi mostra gli username e le password dei miei account (ES. github, moodle, cisco...)
