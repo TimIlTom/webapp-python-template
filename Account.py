@@ -13,3 +13,5 @@ moodle = Account("Moodle", "to.lupu", "password1")
 accounts.append(github)
 accounts.append(moodle)
 
+assert github.password == "password"
+

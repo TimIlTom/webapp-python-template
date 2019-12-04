@@ -7,6 +7,24 @@
     <title>My accounts</title>
 </head>
 <body>
-    
+    <ul>
+
+    </ul>
 </body>
+
+<script src="jquery-3.4.1.min.js"></script>
+
+<script>
+    $.getJSON("http://127.0.0.1:5000/data").done(makelist);
+
+    function makelist(json_account){
+
+        for (accounts of json_account) {
+        let newItem = `<li>${accounts.account_name}</li>`;
+        $("ul").append(newItem);
+    }
+    }
+
+</script>
+
 </html>
