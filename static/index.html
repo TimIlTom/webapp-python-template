@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <style>
+        .username {
+            display: inline;
+            background-color: aqua;
+        }
+    </style>
+
     <title>My accounts</title>
 </head>
+
 <body>
     <ul>
 
@@ -17,12 +27,12 @@
 <script>
     $.getJSON("http://127.0.0.1:5000/data").done(makelist);
 
-    function makelist(json_account){
+    function makelist(json_account) {
 
         for (accounts of json_account) {
-        let newItem = `<li>${accounts.account_name}</li>`;
-        $("ul").append(newItem);
-    }
+            let newItem = `<li>${accounts.account_name} | Username:<div class="username">${accounts.username}</div> Password:${accounts.password}</li>`;
+            $("ul").append(newItem);
+        }
     }
 
 </script>
